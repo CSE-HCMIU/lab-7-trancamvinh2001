@@ -14,11 +14,11 @@
 #define SIZE 1000
 
 void ex1(char *str[],int n){
-	char lcp[10];
+	char lcp[20]="";
 	int i,j;
-	for(i=0;i<n;i++)
+	for(i=1;i<n;i++)
 	{
-		for(j=0;j<strlen(str[i]);j++)
+		for(j=1;j<=strlen(str[i]);j++)
 		{
 			int current=strncmp(lcp,str[i],j);
 			if(current!=0)
