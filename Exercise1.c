@@ -31,6 +31,7 @@ void ex1(char *str[],int n){
 	if(lcp!=0)
 	{
 		printf("%s",lcp);
+	}
 }
 
 int main(int argc, char *argv[]) {
