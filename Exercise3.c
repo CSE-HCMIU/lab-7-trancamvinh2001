@@ -16,7 +16,21 @@ Ex:
 #define SIZE 1000
 
 void ex3(char s1[], char s2[]){
-	//your codes here
+	int n;
+	printf("%d",(s1[0]-48)*(s2[0]-48)-(s1[2]-48)*(s2[2]-48));
+	n=(s1[0]-48)*(s2[0]-48)-(s1[2]-48)*(s2[2]-48);
+	if(n>0)
+	{
+		printf("%c",'+');
+		printf("%d",n);
+		printf("%c",'i');
+	}
+	else
+	{
+		printf("%c",'-');
+		printf("%d",n);
+		printf("%c",'i');
+	}
 }
 
 int main(int argc, char *argv[]) {
